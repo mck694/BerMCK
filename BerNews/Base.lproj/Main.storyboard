@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vha-Bv-3Ow">
+                                <rect key="frame" x="69" y="356" width="237" height="30"/>
+                                <color key="backgroundColor" red="0.1883680556" green="0.77110460069999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FXy-1D-b4V"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDF-Zx-fEa"/>
+                                    <segue destination="2jE-KO-Nk0" kind="show" id="AbP-Po-DPa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vha-Bv-3Ow" secondAttribute="trailing" constant="69" id="M3I-1I-QCC"/>
+                            <constraint firstItem="vha-Bv-3Ow" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="YsM-ud-mV1"/>
+                            <constraint firstItem="vha-Bv-3Ow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="uMH-UJ-7jS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Q2l-KW-cU8">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="eq9-Uh-iUE" customClass="HomeVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JGS-6S-CKY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s8E-yT-NKv">
+                                <rect key="frame" x="0.0" y="45" width="375" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bua-2w-qzl">
+                                    <size key="itemSize" width="375" height="160"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="TIz-3e-i3b" customClass="HomeCell1" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lamborghini-Terzo-Millennio-concept-12" translatesAutoresizingMaskIntoConstraints="NO" id="Gg6-xH-Lsk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Gg6-xH-Lsk" firstAttribute="leading" secondItem="TIz-3e-i3b" secondAttribute="leading" id="3Qz-0P-rIe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gg6-xH-Lsk" secondAttribute="bottom" id="CNd-uL-8mY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gg6-xH-Lsk" secondAttribute="trailing" id="bq8-EW-LpD"/>
+                                            <constraint firstItem="Gg6-xH-Lsk" firstAttribute="top" secondItem="TIz-3e-i3b" secondAttribute="top" id="qO5-Eo-f86"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell2" id="Vad-2h-YW2" customClass="HomeCell2" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="170" width="375" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RTS22TGX-1024x593" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-Tn-vXL">
+                                                    <rect key="frame" x="20" y="33" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manchester United Defeats Liverpool By 3-0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQs-bd-4i0">
+                                                    <rect key="frame" x="132" y="36" width="223" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="375" height="193"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="eq9-Uh-iUE" id="jcb-bs-yg9"/>
+                                    <outlet property="delegate" destination="eq9-Uh-iUE" id="KMN-jQ-Eu4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s8E-yT-NKv" firstAttribute="bottom" secondItem="3r3-6Q-SK3" secondAttribute="bottom" id="6J5-ZT-0xh"/>
+                            <constraint firstItem="s8E-yT-NKv" firstAttribute="top" secondItem="3r3-6Q-SK3" secondAttribute="top" constant="45" id="OP7-HH-8Mp"/>
+                            <constraint firstItem="s8E-yT-NKv" firstAttribute="leading" secondItem="3r3-6Q-SK3" secondAttribute="leading" id="SZR-2a-Ouy"/>
+                            <constraint firstItem="s8E-yT-NKv" firstAttribute="trailing" secondItem="3r3-6Q-SK3" secondAttribute="trailing" id="shh-1U-lel"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3r3-6Q-SK3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="FYq-Vi-w6A">
+                        <barButtonItem key="leftBarButtonItem" image="Icon-16" width="10" id="jHt-yb-nhv">
+                            <color key="tintColor" red="0.99361516500000002" green="0.99361516500000002" blue="0.99361516500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="more" id="bS9-uf-DSD">
+                                <color key="tintColor" red="0.99361516500000002" green="0.99361516500000002" blue="0.99361516500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="filter-results-button" id="GQp-6G-B2Z">
+                                <color key="tintColor" red="0.99361516500000002" green="0.99361516500000002" blue="0.99361516500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOH-E3-2aH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888.8" y="133.5832083958021"/>
+        </scene>
+        <!--LatestVC-->
+        <scene sceneID="Mch-LA-Otu">
+            <objects>
+                <viewController storyboardIdentifier="LatestVC" id="JBy-Og-nB0" customClass="LatestVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTi-Tj-9ei">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1AQ-Mm-s80">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="5BD-YI-4zB" customClass="LatestCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5BD-YI-4zB" id="S87-nx-b5K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JBy-Og-nB0" id="g5s-D8-MPc"/>
+                                    <outlet property="delegate" destination="JBy-Og-nB0" id="fUO-nC-8sG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1AQ-Mm-s80" firstAttribute="leading" secondItem="trw-2e-6Sw" secondAttribute="leading" id="VVl-ej-w9o"/>
+                            <constraint firstItem="trw-2e-6Sw" firstAttribute="trailing" secondItem="1AQ-Mm-s80" secondAttribute="trailing" id="ZGL-Pl-9Ee"/>
+                            <constraint firstItem="trw-2e-6Sw" firstAttribute="bottom" secondItem="1AQ-Mm-s80" secondAttribute="bottom" id="pdX-R9-YCf"/>
+                            <constraint firstItem="1AQ-Mm-s80" firstAttribute="top" secondItem="yTi-Tj-9ei" secondAttribute="top" constant="45" id="y2z-nd-lkM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="trw-2e-6Sw"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1AQ-Mm-s80" id="SzM-NI-Zzc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jy5-RI-B0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="1078"/>
+        </scene>
+        <!--LiveTVVC-->
+        <scene sceneID="hgd-Zz-8kv">
+            <objects>
+                <viewController storyboardIdentifier="LiveTVVC" id="evA-XW-yQj" customClass="LiveTVVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iHB-GT-WEI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQn-zB-VBU">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Zct-cM-ajn" customClass="LiveTVCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zct-cM-ajn" id="AGh-xF-L6M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="evA-XW-yQj" id="7RP-r8-Fzd"/>
+                                    <outlet property="delegate" destination="evA-XW-yQj" id="vMb-Qs-UjZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UQn-zB-VBU" firstAttribute="top" secondItem="iHB-GT-WEI" secondAttribute="top" constant="45" id="AoR-Wt-IUR"/>
+                            <constraint firstItem="UQn-zB-VBU" firstAttribute="leading" secondItem="YrO-jz-cqn" secondAttribute="leading" id="RuB-OJ-XG1"/>
+                            <constraint firstItem="YrO-jz-cqn" firstAttribute="bottom" secondItem="UQn-zB-VBU" secondAttribute="bottom" id="bvN-a1-3Op"/>
+                            <constraint firstItem="YrO-jz-cqn" firstAttribute="trailing" secondItem="UQn-zB-VBU" secondAttribute="trailing" id="hk5-ai-mQU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YrO-jz-cqn"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="UQn-zB-VBU" id="uxF-5R-Rso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w61-kk-dda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="1069"/>
+        </scene>
+        <!--GadgetsVC-->
+        <scene sceneID="uEF-jA-gDd">
+            <objects>
+                <viewController storyboardIdentifier="GadgetsVC" id="m8G-gw-XYS" customClass="GadgetsVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2i7-aI-uBe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9t-nr-EcW">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="hmc-cA-O5b" customClass="GadgetsCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hmc-cA-O5b" id="dJt-aS-3X4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m8G-gw-XYS" id="p7M-G6-nwN"/>
+                                    <outlet property="delegate" destination="m8G-gw-XYS" id="SBM-nd-sxu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P9t-nr-EcW" firstAttribute="trailing" secondItem="642-cK-SN0" secondAttribute="trailing" id="GLd-vI-ouA"/>
+                            <constraint firstItem="P9t-nr-EcW" firstAttribute="top" secondItem="2i7-aI-uBe" secondAttribute="top" constant="45" id="caK-Ic-tTf"/>
+                            <constraint firstItem="P9t-nr-EcW" firstAttribute="leading" secondItem="642-cK-SN0" secondAttribute="leading" id="e34-Iv-H9q"/>
+                            <constraint firstItem="P9t-nr-EcW" firstAttribute="bottom" secondItem="642-cK-SN0" secondAttribute="bottom" id="oGG-Ft-ass"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="642-cK-SN0"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="P9t-nr-EcW" id="hyg-oX-4ZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4i-45-qwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3458.4000000000001" y="1068.215892053973"/>
+        </scene>
+        <!--TrendingVC-->
+        <scene sceneID="3Pt-C3-cpV">
+            <objects>
+                <viewController storyboardIdentifier="TrendingVC" id="S0r-wH-MkO" customClass="TrendingVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sW-uE-GTs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-ds-qvo">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="15U-Gu-WYP" customClass="TrendingCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="15U-Gu-WYP" id="Arl-5j-gxH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="S0r-wH-MkO" id="0cf-Yp-U3i"/>
+                                    <outlet property="delegate" destination="S0r-wH-MkO" id="E3J-Na-rJ2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dm1-IU-NMr" firstAttribute="trailing" secondItem="6Cr-ds-qvo" secondAttribute="trailing" id="9E3-K6-aJI"/>
+                            <constraint firstItem="dm1-IU-NMr" firstAttribute="bottom" secondItem="6Cr-ds-qvo" secondAttribute="bottom" id="VBh-1F-rGe"/>
+                            <constraint firstItem="6Cr-ds-qvo" firstAttribute="leading" secondItem="dm1-IU-NMr" secondAttribute="leading" id="nCH-nY-UBT"/>
+                            <constraint firstItem="6Cr-ds-qvo" firstAttribute="top" secondItem="4sW-uE-GTs" secondAttribute="top" constant="45" id="z3z-LC-IsX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dm1-IU-NMr"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6Cr-ds-qvo" id="Ioa-cB-Hre"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fW-jh-J2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4288" y="1069"/>
+        </scene>
+        <!--VideosVC-->
+        <scene sceneID="Wpg-cD-Md6">
+            <objects>
+                <viewController storyboardIdentifier="VideosVC" id="fNR-kL-fmA" customClass="VideosVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f61-X2-b4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="svB-Ul-aL7">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Q5b-xn-isg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q5b-xn-isg" id="Wdi-v8-UtF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fNR-kL-fmA" id="Giq-Ug-AeT"/>
+                                    <outlet property="delegate" destination="fNR-kL-fmA" id="u9x-pG-V2d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="svB-Ul-aL7" firstAttribute="trailing" secondItem="oRx-Tt-P7r" secondAttribute="trailing" id="0Vu-hm-PO3"/>
+                            <constraint firstItem="oRx-Tt-P7r" firstAttribute="bottom" secondItem="svB-Ul-aL7" secondAttribute="bottom" id="kZn-Mn-lSU"/>
+                            <constraint firstItem="svB-Ul-aL7" firstAttribute="leading" secondItem="oRx-Tt-P7r" secondAttribute="leading" id="nxz-bJ-VwI"/>
+                            <constraint firstItem="svB-Ul-aL7" firstAttribute="top" secondItem="f61-X2-b4r" secondAttribute="top" constant="45" id="ojt-wE-8pE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oRx-Tt-P7r"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="svB-Ul-aL7" id="uaE-1C-efe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbP-nY-WN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706.4000000000001" y="140.77961019490255"/>
+        </scene>
+        <!--BriefsVC-->
+        <scene sceneID="uOd-1d-b82">
+            <objects>
+                <viewController storyboardIdentifier="BriefsVC" id="BdV-QL-3xA" customClass="BriefsVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPM-Kp-C1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-HM-CKr">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ZgP-MR-3VL" customClass="BriefsCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZgP-MR-3VL" id="n5l-9h-8Qg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BdV-QL-3xA" id="AZs-Yk-PFa"/>
+                                    <outlet property="delegate" destination="BdV-QL-3xA" id="HMR-Ks-ZRB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="URw-OQ-mDT" firstAttribute="bottom" secondItem="M1X-HM-CKr" secondAttribute="bottom" id="GLk-EX-G3x"/>
+                            <constraint firstItem="M1X-HM-CKr" firstAttribute="leading" secondItem="URw-OQ-mDT" secondAttribute="leading" id="JcO-hG-gaQ"/>
+                            <constraint firstItem="M1X-HM-CKr" firstAttribute="trailing" secondItem="URw-OQ-mDT" secondAttribute="trailing" id="fce-VY-D5C"/>
+                            <constraint firstItem="M1X-HM-CKr" firstAttribute="top" secondItem="DPM-Kp-C1F" secondAttribute="top" constant="45" id="lQe-Go-OM0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="URw-OQ-mDT"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="M1X-HM-CKr" id="joX-SK-n8U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTQ-FT-tUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3472.8000000000002" y="131.78410794602701"/>
+        </scene>
+        <!--LocalVC-->
+        <scene sceneID="ZLf-02-zyM">
+            <objects>
+                <viewController storyboardIdentifier="LocalVC" id="3FV-SR-C67" customClass="LocalVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qg-hj-wp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-Ai-dak">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="O3D-kw-6ke" customClass="LocalCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O3D-kw-6ke" id="VgC-3t-YXK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3FV-SR-C67" id="klQ-1j-Qr5"/>
+                                    <outlet property="delegate" destination="3FV-SR-C67" id="vlG-GB-sPE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RwA-Ai-dak" firstAttribute="trailing" secondItem="iJN-V9-je9" secondAttribute="trailing" id="24O-Qc-WT3"/>
+                            <constraint firstItem="RwA-Ai-dak" firstAttribute="leading" secondItem="iJN-V9-je9" secondAttribute="leading" id="bla-3e-aoA"/>
+                            <constraint firstItem="iJN-V9-je9" firstAttribute="bottom" secondItem="RwA-Ai-dak" secondAttribute="bottom" id="eZM-ex-ucC"/>
+                            <constraint firstItem="RwA-Ai-dak" firstAttribute="top" secondItem="2qg-hj-wp3" secondAttribute="top" constant="45" id="jk6-V8-Kgo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iJN-V9-je9"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="RwA-Ai-dak" id="VtJ-Z9-vBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fW4-If-6Bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4196" y="148.87556221889056"/>
+        </scene>
+        <!--PhotosVC-->
+        <scene sceneID="Ogf-5U-odY">
+            <objects>
+                <viewController storyboardIdentifier="PhotosVC" id="fkT-E0-qsj" customClass="PhotosVC" customModule="BerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOy-d7-vch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-9i-hx4">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="qy5-ko-XeL" customClass="PhotosCell" customModule="BerNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qy5-ko-XeL" id="EYl-50-BsL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fkT-E0-qsj" id="5As-RY-hN1"/>
+                                    <outlet property="delegate" destination="fkT-E0-qsj" id="O0f-nZ-Qqj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yWi-a4-dme" firstAttribute="bottom" secondItem="3Et-9i-hx4" secondAttribute="bottom" id="FB5-sd-KCq"/>
+                            <constraint firstItem="3Et-9i-hx4" firstAttribute="leading" secondItem="yWi-a4-dme" secondAttribute="leading" id="Nwu-wS-K2c"/>
+                            <constraint firstItem="3Et-9i-hx4" firstAttribute="trailing" secondItem="yWi-a4-dme" secondAttribute="trailing" id="Vbf-Ht-cxe"/>
+                            <constraint firstItem="3Et-9i-hx4" firstAttribute="top" secondItem="NOy-d7-vch" secondAttribute="top" constant="45" id="gs9-CE-8ha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yWi-a4-dme"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3Et-9i-hx4" id="tQi-F9-V8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4T-AC-r4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5016.8000000000002" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i4P-am-bqM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2jE-KO-Nk0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="XtS-Aj-5Qz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1883680556" green="0.77110460069999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="0.99361516500000002" green="0.99361516500000002" blue="0.99361516500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.1883680556" green="0.77110460069999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="-190" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eq9-Uh-iUE" kind="relationship" relationship="rootViewController" id="bEq-0V-uDj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DM3-m6-Ci6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-16" width="16" height="16"/>
+        <image name="Lamborghini-Terzo-Millennio-concept-12" width="1600" height="901"/>
+        <image name="RTS22TGX-1024x593" width="1024" height="593"/>
+        <image name="filter-results-button" width="24" height="24"/>
+        <image name="more" width="24" height="24"/>
+    </resources>
+</document>
